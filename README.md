@@ -26,10 +26,10 @@ http://www.e-stat.go.jp/api/
 
 ```ruby
 key = 'api_key'
-essat = EStat::API.new(key)
+estat = EStat::API.new(key)
 res = es.get_stats_list('0201', '00200521', survey_years: '2000', start_position: '1')
-essat.get_meta_info(res.first['@id'])
-essat.get_stats_data(res.first['@id'])
+estat.get_meta_info(res.first['@id'])
+estat.get_stats_data(res.first['@id'])
 ```
 
 ## Development
