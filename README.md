@@ -27,7 +27,7 @@ http://www.e-stat.go.jp/api/
 ```ruby
 key = 'api_key'
 estat = EStat::API.new(key)
-res = es.get_stats_list('0201', '00200521', survey_years: '2000', start_position: '1')
+res = estat.get_stats_list('0201', '00200521', survey_years: '2000', start_position: '1')
 estat.get_meta_info(res.first['@id'])
 estat.get_stats_data(res.first['@id'])
 ```
